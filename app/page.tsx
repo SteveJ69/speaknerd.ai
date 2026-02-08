@@ -75,13 +75,13 @@ export default function Home() {
           </h2>
           <div className="mt-8 space-y-6 text-text-muted text-base sm:text-lg leading-relaxed">
             <p>
-              I&apos;m Steve. I work in robotics. A year
+              I&apos;m Steve. A year
               ago, I didn&apos;t know what an LLM was, couldn&apos;t tell you
               the difference between a prompt and a parameter, and thought
               &ldquo;fine-tuning&rdquo; was something you did to a guitar.
             </p>
             <p>
-              Then I watched one video that clicked. And I went down the rabbit
+              Then I watched one video that got me hooked. And I went down the rabbit
               hole. I started learning about AI tools, then using them, then
               building with them. I taught myself to code using AI assistants. I
               built real, working applications — from scratch — using nothing but
