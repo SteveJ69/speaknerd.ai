@@ -13,7 +13,7 @@ export function Nav() {
           <img
             src="/logo.webp"
             alt="SpeakNerd.ai"
-            className="h-9"
+            className="h-12"
           />
         </Link>
 
