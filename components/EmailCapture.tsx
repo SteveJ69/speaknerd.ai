@@ -29,7 +29,7 @@ export function EmailCapture({
       formData.append("email", email);
 
       const res = await fetch(
-        "https://buttondown.com/api/emails/embed-subscribe/stevejarnac",
+        "https://buttondown.com/api/emails/embed-subscribe/SteveBuildsAI",
         { method: "POST", body: formData }
       );
 
