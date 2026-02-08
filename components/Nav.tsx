@@ -10,10 +10,11 @@ export function Nav() {
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-border">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary">
-            Speak<span className="text-text">Nerd</span>
-            <span className="text-primary-light">.ai</span>
-          </span>
+          <img
+            src="/logo.webp"
+            alt="SpeakNerd.ai"
+            className="h-9"
+          />
         </Link>
 
         {/* Desktop nav */}
