@@ -24,18 +24,21 @@ export function EmailCapture({
 
     setStatus("loading");
 
-    // TODO: Replace with Buttondown API integration
-    // For now, just simulate success
     try {
-      // Buttondown API endpoint would go here:
-      // const res = await fetch("https://api.buttondown.com/v1/subscribers", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json", Authorization: "Token YOUR_API_KEY" },
-      //   body: JSON.stringify({ email_address: email }),
-      // });
-      await new Promise((resolve) => setTimeout(resolve, 500));
-      setStatus("success");
-      setEmail("");
+      const formData = new FormData();
+      formData.append("email", email);
+
+      const res = await fetch(
+        "https://buttondown.com/api/emails/embed-subscribe/stevejarnac",
+        { method: "POST", body: formData }
+      );
+
+      if (res.ok || res.status === 201) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }

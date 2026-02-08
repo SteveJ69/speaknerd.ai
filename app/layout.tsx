@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://speaknerd.ai/og/default.png",
+        url: "https://speaknerd.ai/og/default.webp",
         width: 1200,
         height: 630,
         alt: "SpeakNerd.ai — Learn to speak nerd (without becoming one)",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "AI explained in plain English. No jargon walls. No PhD required.",
     creator: "@SteveBuilds_AI",
-    images: ["https://speaknerd.ai/og/default.png"],
+    images: ["https://speaknerd.ai/og/default.webp"],
   },
 };
 
