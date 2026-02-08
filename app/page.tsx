@@ -75,7 +75,7 @@ export default function Home() {
           </h2>
           <div className="mt-8 space-y-6 text-text-muted text-base sm:text-lg leading-relaxed">
             <p>
-              I&apos;m Steve. I&apos;m in my 50s. I work in robotics. A year
+              I&apos;m Steve. I work in robotics. A year
               ago, I didn&apos;t know what an LLM was, couldn&apos;t tell you
               the difference between a prompt and a parameter, and thought
               &ldquo;fine-tuning&rdquo; was something you did to a guitar.
@@ -214,7 +214,7 @@ export default function Home() {
               </h3>
               <p className="mt-3 text-sm text-text-muted leading-relaxed">
                 Go from &ldquo;I don&apos;t know code&rdquo; to shipping a real
-                app. I did it at 50. You can do it too.
+                app. I did it. You can too.
               </p>
               <Link
                 href="/products"

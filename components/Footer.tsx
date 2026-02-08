@@ -53,6 +53,12 @@ export function Footer() {
               >
                 @SteveBuilds_AI on X
               </a>
+              <a
+                href="mailto:steve@speaknerd.ai"
+                className="block text-sm text-text-muted hover:text-primary transition-colors"
+              >
+                steve@speaknerd.ai
+              </a>
             </div>
           </div>
         </div>

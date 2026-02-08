@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My Story — How a 50-year-old robotics guy learned AI | SpeakNerd.ai",
+  title: "My Story — How a robotics guy learned AI | SpeakNerd.ai",
   description:
-    "I'm Steve. I'm in my 50s. A year ago I didn't know what an LLM was. Now I build apps with AI. Here's how.",
+    "I'm Steve. A year ago I didn't know what an LLM was. Now I build apps with AI. Here's how.",
 };
 
 export default function StoryPage() {
@@ -22,7 +22,7 @@ export default function StoryPage() {
 
       <div className="space-y-6 text-text-muted text-base sm:text-lg leading-relaxed">
         <p>
-          I&apos;m Steve. I&apos;m in my 50s. For decades, I&apos;ve worked in
+          I&apos;m Steve. For decades, I&apos;ve worked in
           industrial robotics — programming real, physical robots that weld car
           parts and move things on assembly lines. Not exactly Silicon Valley.
         </p>
@@ -110,7 +110,7 @@ export default function StoryPage() {
             it.
           </li>
           <li>
-            If I can figure this out at 50+, anyone can. I&apos;m living proof.
+            If I can figure this out, anyone can. I&apos;m living proof.
           </li>
         </ul>
 
@@ -130,7 +130,14 @@ export default function StoryPage() {
           </a>{" "}
           to see what I&apos;m working on, the mistakes I make, and the things I
           learn along the way. No polished highlight reel — just real
-          building.
+          building. Or drop me a line at{" "}
+          <a
+            href="mailto:steve@speaknerd.ai"
+            className="text-primary font-semibold hover:text-primary-dark transition-colors"
+          >
+            steve@speaknerd.ai
+          </a>
+          . I read every email.
         </p>
       </div>
 
