@@ -1,0 +1,26 @@
+---
+title: "Hallucination"
+subtitle: "When AI makes stuff up"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "When AI confidently tells you something that's completely wrong. Like that friend who never admits they don't know."
+related: ["llm", "rag", "prompt"]
+---
+
+## The Plain English Version
+
+You know that friend who always has an answer — even when they clearly don't know what they're talking about? The one who'll confidently tell you that "actually, the Great Wall of China is visible from space" even though that's not true?
+
+AI does the same thing. It's called a hallucination.
+
+When ChatGPT or any other AI makes up a fact, invents a source that doesn't exist, or gives you a confident-sounding answer that's completely wrong — that's a hallucination. It's not lying on purpose. It's not trying to deceive you. It's just doing what it always does: predicting what sounds like a reasonable response based on patterns. Sometimes those patterns lead to something that sounds right but isn't.
+
+The tricky part? It sounds just as confident when it's wrong as when it's right. There's no "I'm not sure" hesitation. It just... says it.
+
+## Why Should You Care?
+
+Because if you're going to use AI, you need to know it will sometimes be wrong. Not occasionally — regularly. Especially about specific facts, recent events, or niche topics. The people who use AI well are the ones who verify important stuff. The ones who get burned are the ones who trust everything blindly.
+
+## The Nerd Version (if you dare)
+
+Hallucinations occur because LLMs are probabilistic text generators, not knowledge retrieval systems. They produce tokens based on statistical likelihood, not factual accuracy. Techniques like RAG (Retrieval-Augmented Generation), grounding, and chain-of-thought prompting can reduce hallucinations but not eliminate them entirely.

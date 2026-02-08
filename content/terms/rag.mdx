@@ -1,0 +1,24 @@
+---
+title: "RAG"
+subtitle: "Retrieval-Augmented Generation"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "Teaching AI to Google things before answering you. Reduces the 'making stuff up' problem."
+related: ["llm", "hallucination", "fine-tuning"]
+---
+
+## The Plain English Version
+
+Imagine you're taking a test. In scenario A, you have to answer everything from memory. In scenario B, you get to look through your notes first, then answer. You're going to do way better in scenario B, right?
+
+RAG is scenario B for AI. Instead of making the AI answer purely from memory (which is how it normally works, and why it sometimes makes stuff up), RAG lets it look up relevant information first, then use that info to give you a better answer.
+
+Here's how it works: you ask a question, the system searches through a collection of documents to find relevant pieces, hands those pieces to the AI along with your question, and the AI generates an answer based on actual source material. It's like giving the AI a cheat sheet before the exam.
+
+## Why Should You Care?
+
+Because RAG is the main solution to the hallucination problem. When an AI makes stuff up, it's usually because it's guessing from memory. RAG forces it to reference real documents first. If you ever hear a company say their AI is "grounded" or "based on your data," they're probably using RAG. It's one of the most practical AI techniques out there.
+
+## The Nerd Version (if you dare)
+
+RAG combines a retrieval system (typically vector search using embeddings) with a generative model. Documents are chunked, embedded into a vector space, and stored in a vector database. At query time, relevant chunks are retrieved via semantic similarity, injected into the prompt as context, and the LLM generates a response grounded in those sources. Frameworks like LangChain and LlamaIndex simplify RAG implementation.

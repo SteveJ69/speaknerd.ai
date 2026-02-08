@@ -1,0 +1,24 @@
+---
+title: "Cloudflare"
+subtitle: "The internet's bodyguard"
+category: "tools-platforms"
+difficulty: "beginner"
+tldr: "A company that protects websites, makes them faster, and hosts them. They sit between your site and the internet like a bouncer."
+related: ["deploy", "vercel", "frontend"]
+---
+
+## The Plain English Version
+
+Imagine a nightclub with a bouncer at the door. The bouncer lets in regular customers, blocks the troublemakers, and keeps the line moving smoothly. Cloudflare is that bouncer for websites.
+
+When someone visits a website that uses Cloudflare, their request goes through Cloudflare first. Cloudflare checks if it's a real person or a bot attack, caches the content so it loads faster, and routes the traffic efficiently. The website owner doesn't have to worry about being overwhelmed by traffic or attacked by hackers — Cloudflare handles it.
+
+But Cloudflare is more than just protection. They also offer Cloudflare Pages (where you can host entire websites for free), Workers (serverless code at the edge), and domain registration. This very site is hosted on Cloudflare Pages.
+
+## Why Should You Care?
+
+Because Cloudflare is one of the best deals in tech. Free SSL certificates, free website hosting, free DDoS protection, free CDN (content delivery network that makes your site fast worldwide). If you're building a website and not using Cloudflare in some capacity, you're probably leaving free performance and security on the table.
+
+## The Nerd Version (if you dare)
+
+Cloudflare operates a global anycast network across 300+ cities. Services include: reverse proxy CDN, DDoS mitigation, WAF (Web Application Firewall), DNS, SSL/TLS termination, Cloudflare Pages (static/JAMstack hosting), Workers (V8 isolate serverless functions), R2 (S3-compatible object storage with zero egress fees), and D1 (SQLite at the edge). They handle ~20% of all web traffic.
