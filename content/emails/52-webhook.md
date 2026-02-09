@@ -1,0 +1,46 @@
+# SpeakNerd Weekly #52: Webhook
+
+**Subject line:** The doorbell of the internet
+
+---
+
+Hey — Steve here.
+
+Last week we covered **Automation**. This week, let's talk about something you've probably heard but maybe never fully understood.
+
+## This Week's Term: Webhook
+
+**The quick version:** An automatic notification from one app to another when something happens. Instead of checking your mailbox every 5 minutes, the mailman rings your doorbell.
+
+**The deeper version:**
+
+You're waiting for a package. Option A: walk to your mailbox every 5 minutes to check if it arrived. Option B: the delivery driver rings your doorbell when it shows up. A webhook is the doorbell.
+
+In tech, apps often need to know when something happens in another app. "Tell me when someone makes a purchase." "Let me know when a new file is uploaded." "Alert me when a payment fails." Without webhooks, your app would have to constantly check — "anything new? anything new? anything new?" — wasting resources on thousands of empty checks.
+
+With webhooks, the other app just... tells you. The moment something happens, it sends an automatic notification to a URL you specified. Your app receives it and acts on it immediately. Stripe uses webhooks to tell your app about payments. GitHub uses webhooks to tell your deploy system about new code. Buttondown could use a webhook to notify your system when someone subscribes.
+
+## Why This Matters
+
+Because webhooks are the glue that connects modern apps. If you've ever used Zapier, IFTTT, or any automation tool — they rely heavily on webhooks. Understanding them helps you understand how apps talk to each other and opens up the world of automation: "When THIS happens, automatically do THAT."
+
+## Try It Yourself (2 minutes)
+
+If you use Slack, check the integrations. Many work via webhooks — something happens in another app, Slack gets notified automatically.
+
+## Go Deeper
+
+- Search for "Webhook explained simply" — you'll find great visual guides
+- 🔗 [Read the full SpeakNerd term page](https://speaknerd.ai/terms/webhook)
+
+## The Nerd Corner
+
+Webhooks are HTTP callbacks — user-defined POST requests triggered by events. The source system sends a JSON payload to a registered endpoint URL when an event occurs. Implementation involves endpoint registration, payload signature verification (HMAC-SHA256), retry logic with exponential backoff, idempotency keys, and event ordering. Security concerns include payload validation, IP whitelisting, and secret rotation. Webhook testing tools include ngrok, webhook.site, and RequestBin. Event-driven architectures often combine webhooks with message queues for reliability.
+
+---
+
+*Next week: **DNS** — we'll break down what it means and why you should care.*
+
+*— Steve*
+
+*P.S. Know someone who'd find this useful? Forward this email. They can [sign up here](https://speaknerd.ai).*
