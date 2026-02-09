@@ -134,12 +134,14 @@ export default async function TermPage({ params }: TermPageProps) {
       <div className="mt-8 text-center">
         <p className="text-sm text-text-muted">
           Want all 75 terms in one PDF?{" "}
-          <Link
-            href="/products"
+          <a
+            href="https://speaknerdai.gumroad.com/l/mvircb"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-primary font-semibold hover:text-primary-dark transition-colors"
           >
             Grab the SpeakNerd Cheat Sheet — $9
-          </Link>
+          </a>
         </p>
       </div>
     </article>

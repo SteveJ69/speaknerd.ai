@@ -295,12 +295,14 @@ export default function Home() {
             >
               Browse the glossary
             </Link>
-            <Link
-              href="/products"
+            <a
+              href="https://speaknerdai.gumroad.com/l/mvircb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
             >
               Get the cheat sheet — $9
-            </Link>
+            </a>
           </div>
         </div>
       </section>

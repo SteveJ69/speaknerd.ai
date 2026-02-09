@@ -56,7 +56,9 @@ export default function ProductsPage() {
             </li>
           </ul>
           <a
-            href="#"
+            href="https://speaknerdai.gumroad.com/l/mvircb"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 block w-full text-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
           >
             Get the Cheat Sheet
