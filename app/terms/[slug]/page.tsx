@@ -133,7 +133,7 @@ export default async function TermPage({ params }: TermPageProps) {
       {/* Product nudge */}
       <div className="mt-8 text-center">
         <p className="text-sm text-text-muted">
-          Want all 50+ terms on one printable page?{" "}
+          Want all 75 terms in one PDF?{" "}
           <Link
             href="/products"
             className="text-primary font-semibold hover:text-primary-dark transition-colors"

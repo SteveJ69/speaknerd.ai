@@ -30,8 +30,8 @@ export default function ProductsPage() {
             The SpeakNerd Cheat Sheet
           </h2>
           <p className="mt-2 text-text-muted text-sm leading-relaxed flex-1">
-            50+ AI terms on one beautiful, printable page. Pin it next to your
-            monitor. Never nod along pretending to understand again.
+            75 AI terms explained in plain English. One PDF, zero jargon.
+            Never nod along pretending to understand again.
           </p>
           <div className="mt-6">
             <span className="text-3xl font-bold text-text">$9</span>
@@ -40,7 +40,7 @@ export default function ProductsPage() {
           <ul className="mt-6 space-y-2 text-sm text-text-muted">
             <li className="flex items-start gap-2">
               <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
-              50+ terms with one-liner explanations
+              75 terms with plain English explanations
             </li>
             <li className="flex items-start gap-2">
               <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
