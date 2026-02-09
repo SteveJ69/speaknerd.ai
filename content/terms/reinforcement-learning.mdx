@@ -1,0 +1,24 @@
+---
+title: "Reinforcement Learning"
+subtitle: "Learning by trial, error, and treats"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "AI that learns by trying stuff and getting rewards or punishments. Like training a dog — do the right thing, get a treat. Do the wrong thing, no treat."
+related: ["machine-learning", "alignment", "training-data"]
+---
+
+## The Plain English Version
+
+Think about how you learned to ride a bike. Nobody handed you a manual. You got on, wobbled, fell, got back up, wobbled less, and eventually figured it out. Each fall taught you what NOT to do. Each successful moment reinforced what worked. That's reinforcement learning.
+
+Instead of showing the AI labeled examples ("this is a cat, this is a dog"), you drop it into an environment and let it figure things out through trial and error. Do something good? Here's a reward. Do something bad? Negative feedback. Over thousands or millions of attempts, it learns the best strategy — not because someone told it, but because it discovered it.
+
+This is how DeepMind's AlphaGo beat the world champion at Go — a game with more possible positions than atoms in the universe. It played millions of games against itself, learning from every win and loss. It's also how ChatGPT learned to be helpful and not toxic — human reviewers rated its responses (reward) and it learned to generate more of the responses humans liked.
+
+## Why Should You Care?
+
+Because reinforcement learning is what makes AI actually good at complex tasks. It's behind recommendation algorithms, game-playing AI, robotics, and the fine-tuning that makes chatbots helpful instead of unhinged. When someone says AI "learned" to do something, reinforcement learning is often how.
+
+## The Nerd Version (if you dare)
+
+Reinforcement learning (RL) involves an agent interacting with an environment, receiving observations and rewards, and learning a policy to maximize cumulative reward. Key algorithms include Q-learning, policy gradient methods (PPO, A2C), and model-based RL. RLHF (Reinforcement Learning from Human Feedback) applies RL to language model alignment using a reward model trained on human preference data. Recent advances include DPO (Direct Preference Optimization) as a simpler alternative to full RLHF pipelines.

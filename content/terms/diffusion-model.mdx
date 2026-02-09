@@ -1,0 +1,24 @@
+---
+title: "Diffusion Model"
+subtitle: "The tech behind AI art"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "The technology powering AI image generators like Midjourney and DALL-E. It learns by adding noise to images, then learns to remove it. Like learning to clean by first messing up."
+related: ["text-to-image", "generative-ai", "deep-learning"]
+---
+
+## The Plain English Version
+
+Imagine you take a beautiful photograph and slowly add static to it — like old TV snow — until it's nothing but random noise. Now imagine learning to reverse that process. Starting from pure static and gradually removing noise until a beautiful image emerges. That's basically how diffusion models work.
+
+During training, the AI takes millions of real images and practices adding noise to them step by step. Then it learns to reverse the process — starting from random noise and gradually shaping it into a coherent image. Once trained, you can give it pure noise and a text description ("a sunset over mountains") and it'll sculpt that noise into a matching image, one tiny step at a time.
+
+This is the technology behind Midjourney, DALL-E, Stable Diffusion, and pretty much every AI image generator that made your jaw drop. It's also being extended to video (Sora), audio, and even 3D models. The results went from "kinda looks like a melted Picasso" to "wait, is that a real photo?" in about two years.
+
+## Why Should You Care?
+
+Because diffusion models democratized visual creation. You used to need years of artistic training or thousands of dollars for a designer to create original images. Now you type a sentence and get something usable in seconds. Whether you're making marketing materials, illustrating a children's book, or just having fun — this technology is incredibly accessible.
+
+## The Nerd Version (if you dare)
+
+Diffusion models (DDPMs, score-based models) learn to reverse a gradual noising process through a Markov chain of denoising steps. The forward process adds Gaussian noise over T timesteps; the reverse process uses a neural network (typically a U-Net or transformer) to predict and remove noise conditioned on timestep and optional conditioning signals (text embeddings via CLIP/T5). Key advances include latent diffusion (operating in compressed latent space), classifier-free guidance, ControlNet, LoRA fine-tuning, and various sampling schedulers (DDIM, DPM-Solver).

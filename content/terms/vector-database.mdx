@@ -1,0 +1,24 @@
+---
+title: "Vector Database"
+subtitle: "A database that understands meaning"
+category: "building-blocks"
+difficulty: "beginner"
+tldr: "A special database that finds things by meaning instead of exact matches. Like a librarian who finds books by vibes instead of just by title."
+related: ["embedding", "rag", "database"]
+---
+
+## The Plain English Version
+
+A regular database is like a filing cabinet. You look something up by its exact label. Search for "apple pie recipe" and it finds documents with those exact words. If the recipe is titled "Grandma's Famous Apple Tart," too bad — the regular database misses it.
+
+A vector database is more like a really smart librarian. You say, "I want something about baking apple desserts," and they bring you the apple pie recipe, the apple tart, AND that cinnamon crumble thing that's technically not an apple dessert but is close enough. They understand what you MEAN, not just what you SAID.
+
+How? Vector databases store embeddings — those number representations of meaning we talked about. When you search, your query gets converted to numbers too, and the database finds the closest matches. It's why AI can search your documents and find relevant stuff even when the exact words don't match.
+
+## Why Should You Care?
+
+Because vector databases are what make AI actually useful for YOUR stuff. Want AI to answer questions about your company's documents? Your notes? Your emails? That requires a vector database to store and search through the meaning of all that content. They're the infrastructure behind every "chat with your data" tool you've seen.
+
+## The Nerd Version (if you dare)
+
+Vector databases (Pinecone, Weaviate, Chroma, Qdrant, pgvector) are optimized for storing and querying high-dimensional vector embeddings using approximate nearest neighbor (ANN) algorithms like HNSW or IVF. They support similarity search operations (cosine, dot product, Euclidean distance) and are essential for RAG pipelines, semantic search, and recommendation systems. Most support metadata filtering alongside vector similarity.

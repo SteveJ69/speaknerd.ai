@@ -1,0 +1,24 @@
+---
+title: "Supervised Learning"
+subtitle: "Learning from labeled flashcards"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "Teaching AI with labeled examples: 'This is a cat. This is a dog. Now YOU tell me.' Flashcards for robots."
+related: ["machine-learning", "training-data", "deep-learning"]
+---
+
+## The Plain English Version
+
+Remember flashcards? Someone shows you a card with a picture and the answer on the back. France → Paris. Japan → Tokyo. After enough cards, you know the answers without looking.
+
+Supervised learning is flashcards for AI. You give it thousands (or millions) of examples where you already know the answer. "This email is spam." "This email is not spam." "This email is spam." After seeing enough labeled examples, the AI learns to sort new emails on its own — even ones it's never seen before.
+
+The "supervised" part means a human provided the correct answers (the labels) for the training data. The AI learns the relationship between inputs and outputs by studying these examples. It's the most common type of machine learning and powers everything from email spam filters to medical image diagnosis to voice recognition.
+
+## Why Should You Care?
+
+Because supervised learning is behind most of the AI you interact with daily. When your phone recognizes your face, when Gmail catches spam, when your bank flags a suspicious transaction — that's all supervised learning. Understanding it helps you understand both what AI is good at (pattern matching from examples) and its limitations (it can only learn patterns that exist in its training data).
+
+## The Nerd Version (if you dare)
+
+Supervised learning trains models on labeled datasets consisting of input-output pairs (X, y) to learn a mapping function f(X) → y. Regression tasks predict continuous values; classification tasks predict discrete categories. Common algorithms include linear/logistic regression, decision trees, random forests, SVMs, and neural networks. Training involves minimizing a loss function (MSE, cross-entropy) via gradient descent. Generalization is evaluated on held-out test sets, with overfitting managed through regularization, dropout, and early stopping.

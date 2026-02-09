@@ -1,0 +1,24 @@
+---
+title: "Text-to-Image"
+subtitle: "Type words, get pictures"
+category: "ai-basics"
+difficulty: "beginner"
+tldr: "You type 'a cat riding a motorcycle through space' and AI creates that image. The most mind-blowing parlor trick in tech right now."
+related: ["diffusion-model", "generative-ai", "prompt"]
+---
+
+## The Plain English Version
+
+Type a sentence. Get a picture. That's it. That's text-to-image AI.
+
+"A golden retriever wearing a spacesuit on Mars." Boom — you have it. "A oil painting of a city skyline in the style of Van Gogh." Done. "A photo-realistic image of a cozy coffee shop in Tokyo during cherry blossom season." Here you go. Images that never existed before, created in seconds from nothing but your words.
+
+This felt like science fiction until about 2022, when tools like DALL-E, Midjourney, and Stable Diffusion burst onto the scene. Suddenly anyone could create stunning visuals without knowing how to draw, paint, or use Photoshop. The quality went from "that looks like a nightmare" to "I genuinely can't tell if this is a real photo" in about a year and a half.
+
+## Why Should You Care?
+
+Because visual creation just became a superpower anyone can have. Need an image for a presentation? A blog post? A social media ad? You don't need to hire a designer or buy stock photos anymore. You describe what you want and it appears. The people who get good at writing prompts (describing what they want) are getting results that look like they hired a professional studio.
+
+## The Nerd Version (if you dare)
+
+Text-to-image systems use text encoders (CLIP, T5) to convert natural language descriptions into embedding vectors that condition image generation models (typically diffusion models or autoregressive transformers). The text embedding guides the denoising process through cross-attention layers. Key systems include DALL-E 3 (OpenAI), Midjourney, Stable Diffusion (Stability AI), and Imagen (Google). Advanced techniques include inpainting, outpainting, img2img, ControlNet for structural guidance, and LoRA/DreamBooth for subject-specific fine-tuning.
