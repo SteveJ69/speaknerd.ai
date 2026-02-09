@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,6 +14,10 @@ export const metadata: Metadata = {
   title: "SpeakNerd.ai — Learn to speak nerd (without becoming one)",
   description:
     "AI explained in plain English. No jargon walls. No PhD required. Just a regular guy who figured it out and wants to help you do the same.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   keywords: [
     "AI explained simply",
     "what is AI",
@@ -54,11 +59,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -47,11 +47,11 @@ export function EmailCapture({
   if (status === "success") {
     return (
       <div className={`text-center ${className}`}>
-        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-8">
-          <p className="text-xl font-semibold text-emerald-700">
+        <div className="bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-xl p-8">
+          <p className="text-xl font-semibold text-emerald-700 dark:text-emerald-300">
             You&apos;re in.
           </p>
-          <p className="mt-2 text-emerald-600">
+          <p className="mt-2 text-emerald-600 dark:text-emerald-400">
             Check your inbox — your first term is on its way.
           </p>
         </div>
@@ -77,7 +77,7 @@ export function EmailCapture({
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
           required
-          className="flex-1 px-4 py-3 rounded-lg border border-border bg-white text-text placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+          className="flex-1 px-4 py-3 rounded-lg border border-border bg-input text-text placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
         />
         <button
           type="submit"
@@ -88,7 +88,7 @@ export function EmailCapture({
         </button>
       </form>
       {status === "error" && (
-        <p className="mt-2 text-sm text-red-600 text-center">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-400 text-center">
           Something went wrong. Try again?
         </p>
       )}

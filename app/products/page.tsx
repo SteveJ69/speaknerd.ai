@@ -22,8 +22,8 @@ export default function ProductsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Tier 1: Cheat Sheet */}
-        <div className="bg-white border-2 border-border rounded-2xl p-8 flex flex-col">
-          <div className="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1 rounded-full w-fit">
+        <div className="bg-card border-2 border-border rounded-2xl p-8 flex flex-col">
+          <div className="text-xs font-semibold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30 px-3 py-1 rounded-full w-fit">
             Most Popular
           </div>
           <h2 className="mt-4 text-2xl font-bold text-text">
@@ -39,19 +39,19 @@ export default function ProductsPage() {
           </div>
           <ul className="mt-6 space-y-2 text-sm text-text-muted">
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               50+ terms with one-liner explanations
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Visual category map
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Printable PDF (looks great on your wall)
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Instant download
             </li>
           </ul>
@@ -64,7 +64,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Tier 2: Kickstart Kit */}
-        <div className="bg-white border-2 border-primary rounded-2xl p-8 flex flex-col relative">
+        <div className="bg-card border-2 border-primary rounded-2xl p-8 flex flex-col relative">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-white bg-primary px-4 py-1 rounded-full">
             Best Value
           </div>
@@ -85,23 +85,23 @@ export default function ProductsPage() {
           </div>
           <ul className="mt-6 space-y-2 text-sm text-text-muted">
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Everything in the Cheat Sheet
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               40-60 page ebook (Steve&apos;s full journey)
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               30-day action plan with daily tasks
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               20 copy-paste prompts that actually work
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Tool recommendations with honest reviews
             </li>
           </ul>
@@ -114,8 +114,8 @@ export default function ProductsPage() {
         </div>
 
         {/* Tier 3: Bootcamp */}
-        <div className="bg-white border-2 border-border rounded-2xl p-8 flex flex-col">
-          <div className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full w-fit">
+        <div className="bg-card border-2 border-border rounded-2xl p-8 flex flex-col">
+          <div className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 px-3 py-1 rounded-full w-fit">
             Coming Soon
           </div>
           <h2 className="mt-4 text-2xl font-bold text-text">
@@ -131,19 +131,19 @@ export default function ProductsPage() {
           </div>
           <ul className="mt-6 space-y-2 text-sm text-text-muted">
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Everything in the Kickstart Kit
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Full video course (build a real app)
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Screen recordings with narration
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-0.5">&#10003;</span>
+              <span className="text-emerald-500 dark:text-emerald-400 mt-0.5">&#10003;</span>
               Private community access
             </li>
             <li className="flex items-start gap-2">

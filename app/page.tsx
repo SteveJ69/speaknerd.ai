@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* ─── SECTION 1: THE HOOK ─── */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-card">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-text leading-tight">
             Everyone&apos;s talking about AI.
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* ─── SECTION 3: THE BRIDGE (Steve's Story) ─── */}
-      <section id="the-story" className="bg-white py-16 sm:py-24">
+      <section id="the-story" className="bg-card py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-text text-center">
             A year ago, I was you.
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* ─── SECTION 5: THE PATH ─── */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-card py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-text text-center">
             Here&apos;s the path.
@@ -130,9 +130,9 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Step 1 */}
             <div className="bg-surface rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-violet-100 rounded-xl flex items-center justify-center mx-auto">
+              <div className="w-14 h-14 bg-violet-100 dark:bg-violet-900/30 rounded-xl flex items-center justify-center mx-auto">
                 <svg
-                  className="w-7 h-7 text-violet-600"
+                  className="w-7 h-7 text-violet-600 dark:text-violet-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -162,9 +162,9 @@ export default function Home() {
 
             {/* Step 2 */}
             <div className="bg-surface rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mx-auto">
+              <div className="w-14 h-14 bg-amber-100 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mx-auto">
                 <svg
-                  className="w-7 h-7 text-amber-600"
+                  className="w-7 h-7 text-amber-600 dark:text-amber-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -194,9 +194,9 @@ export default function Home() {
 
             {/* Step 3 */}
             <div className="bg-surface rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mx-auto">
+              <div className="w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mx-auto">
                 <svg
-                  className="w-7 h-7 text-emerald-600"
+                  className="w-7 h-7 text-emerald-600 dark:text-emerald-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -235,7 +235,7 @@ export default function Home() {
       </section>
 
       {/* ─── SECTION 7: FEATURED TERMS PREVIEW ─── */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-card py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-text text-center">
             Start with these.
@@ -291,7 +291,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/glossary"
-              className="px-8 py-3.5 bg-white text-primary font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+              className="px-8 py-3.5 bg-white dark:bg-card text-primary font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-surface transition-colors"
             >
               Browse the glossary
             </Link>
@@ -314,7 +314,7 @@ const featuredTerms = [
     title: "LLM",
     subtitle: "Large Language Model",
     category: "AI Basics",
-    categoryColor: "bg-violet-100 text-violet-700",
+    categoryColor: "bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300",
     tldr: "The brain behind ChatGPT. It read the entire internet and now it guesses what word comes next. Really, really well.",
   },
   {
@@ -322,7 +322,7 @@ const featuredTerms = [
     title: "Prompt",
     subtitle: "The thing you type into AI",
     category: "AI Basics",
-    categoryColor: "bg-violet-100 text-violet-700",
+    categoryColor: "bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300",
     tldr: "The instruction you give an AI. Better prompts = better answers. It's like asking good questions at a bar.",
   },
   {
@@ -330,7 +330,7 @@ const featuredTerms = [
     title: "Vibe Coding",
     subtitle: "Building apps with AI assistance",
     category: "Vibe Coding",
-    categoryColor: "bg-emerald-100 text-emerald-700",
+    categoryColor: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300",
     tldr: "Writing code by describing what you want to an AI, then letting it write the actual code. It's how I built my first app.",
   },
   {
@@ -338,7 +338,7 @@ const featuredTerms = [
     title: "Hallucination",
     subtitle: "When AI makes stuff up",
     category: "AI Basics",
-    categoryColor: "bg-violet-100 text-violet-700",
+    categoryColor: "bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300",
     tldr: "When AI confidently tells you something that's completely wrong. Like that friend who never admits they don't know.",
   },
   {
@@ -346,7 +346,7 @@ const featuredTerms = [
     title: "API",
     subtitle: "Application Programming Interface",
     category: "Building Blocks",
-    categoryColor: "bg-blue-100 text-blue-700",
+    categoryColor: "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
     tldr: "A menu that lets apps order from other apps. Your weather app uses an API to ask a weather service for the forecast.",
   },
   {
@@ -354,7 +354,7 @@ const featuredTerms = [
     title: "SaaS",
     subtitle: "Software as a Service",
     category: "Money & Business",
-    categoryColor: "bg-amber-100 text-amber-700",
+    categoryColor: "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
     tldr: "Software you pay for monthly instead of buying once. Netflix for apps. The holy grail of tech businesses.",
   },
 ];

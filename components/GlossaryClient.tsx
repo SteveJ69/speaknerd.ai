@@ -41,7 +41,7 @@ export function GlossaryClient({ terms, categories }: GlossaryClientProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search terms..."
-          className="w-full px-4 py-3 rounded-lg border border-border bg-white text-text placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+          className="w-full px-4 py-3 rounded-lg border border-border bg-input text-text placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
         />
       </div>
 
@@ -96,7 +96,7 @@ export function GlossaryClient({ terms, categories }: GlossaryClientProps) {
                 <span
                   className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
                     categoryColors[term.category] ||
-                    "bg-gray-100 text-gray-700"
+                    "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
                   }`}
                 >
                   {categories.find((c) => c.slug === term.category)?.name ||
